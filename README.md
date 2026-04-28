@@ -44,5 +44,5 @@ MIT — ver [LICENSE](./LICENSE).
 
 ## Autor
 
-Randy Bonucci Martin — Proyecto educativo, Bootcamp Data & IA
+Randy Bonucci — Proyecto educativo, Bootcamp Data & IA
  
