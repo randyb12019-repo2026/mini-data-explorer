@@ -6,6 +6,8 @@ App de Streamlit para explorar visualmente cualquier CSV.
 
 import pandas as pd
 import streamlit as st
+import seaborn as sns
+import matplotlib.pyplot as plt
 
 
 # 1. CONFIGURACIÓN DE LA PÁGINA
@@ -75,3 +77,21 @@ elif tipo_grafico == 'Frecuencia de una variable categórica' and columnas_categ
     st.bar_chart(df[columna].value_counts())
 else:
     st.warning('No hay columnas de ese tipo en el dataset.')
+
+
+# 5. OPCIÓN 1: MAPA DE CORRELACIÓN
+st.sidebar.header('📊 Opciones de análisis')
+if st.sidebar.checkbox('Mostrar mapa de correlación'):
+    st.subheader('Mapa de correlación')
+    st.write('El mapa de correlación muestra la relación entre las columnas numéricas del dataset.')
+
+    # Calcular la matriz de correlación
+    correlacion = df.corr()
+
+    # Mostrar la matriz de correlación como un heatmap
+    st.dataframe(correlacion, use_container_width=True)
+
+    # Visualización con seaborn
+    fig, ax = plt.subplots(figsize=(10, 8))
+    sns.heatmap(correlacion, annot=True, fmt='.2f', cmap='coolwarm', ax=ax)
+    st.pyplot(fig)

@@ -45,12 +45,4 @@ MIT — ver [LICENSE](./LICENSE).
 ## Autor
 
 Randy Bonucci Martin — Proyecto educativo, Bootcamp Data & IA
-e](https://linkedin.com/in/tu-usuario)
-- ✉️ Email: tu@email.com
-
----
-
-<p align="center">
-  Si te gustó el proyecto, déjale una ⭐ en GitHub
-</p>
  
