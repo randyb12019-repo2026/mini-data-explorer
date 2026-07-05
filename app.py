@@ -85,8 +85,8 @@ if st.sidebar.checkbox('Mostrar mapa de correlación'):
     st.subheader('Mapa de correlación')
     st.write('El mapa de correlación muestra la relación entre las columnas numéricas del dataset.')
 
-    # Calcular la matriz de correlación
-    correlacion = df.corr()
+    # Calcular la matriz de correlación (solo columnas numéricas)
+    correlacion = df.select_dtypes(include='number').corr()
 
     # Mostrar la matriz de correlación como un heatmap
     st.dataframe(correlacion, use_container_width=True)
