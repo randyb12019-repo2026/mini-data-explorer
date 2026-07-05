@@ -36,7 +36,7 @@ if archivo_subido is not None:
     df = pd.read_csv(archivo_subido)
     st.sidebar.success('✅ Archivo cargado')
 else:
-    df = pd.read_csv('../mini-data-explorer/datos.csv')
+    df = pd.read_csv('datos.csv')
     st.sidebar.info('ℹ️ Usando dataset de ejemplo')
 
 

@@ -1,4 +1,6 @@
 altair==6.1.0
+matplotlib==3.10.9
+seaborn==0.13.2
 attrs==26.1.0
 blinker==1.9.0
 cachetools==7.0.6

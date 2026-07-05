@@ -1,5 +1,7 @@
 # mini-data-explorer
 
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://mini-data-explorer-rb.streamlit.app)
+
 App en Streamlit para explorar visualmente cualquier archivo CSV de forma interactiva.
 
 ## Funcionalidades
